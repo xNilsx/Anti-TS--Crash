@@ -1,6 +1,4 @@
 /*
-* TeamSpeak 3 demo plugin
-*
 * Copyright (c) 2008-2014 TeamSpeak Systems GmbH
 */
 
