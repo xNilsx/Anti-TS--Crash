@@ -174,7 +174,7 @@ int ts3plugin_onClientPokeEvent(uint64 serverConnectionHandlerID, anyID fromClie
 	std::string bug_4("[img][img]");
 	std::string bug_5("[img]\\");
 	std::string bug_6("[img]/");
-	if (text.find(bug_1) != std::string::npos || text.find(bug_2) != std::string::npos || text.find(bug_3) != std::string::npos || text.find(bug_4) != std::string::npos || text.find(bug_5) != std::string::npos || text.find(bug_5) != std::string::npos) {
+	if (text.find(bug_1) != std::string::npos || text.find(bug_2) != std::string::npos || text.find(bug_3) != std::string::npos || text.find(bug_4) != std::string::npos || text.find(bug_5) != std::string::npos || text.find(bug_6) != std::string::npos) {
 		char buff[100];
 		sprintf_s(buff, "[b][color=red][ANTI CRASH] %s (%s) wollte dich crashen![/color][/b]", pokerName, pokerUniqueIdentity);
 		std::string buffAsStdStr = buff;
