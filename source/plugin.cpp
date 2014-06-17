@@ -68,7 +68,7 @@ const char* ts3plugin_name() {
 #endif
 }
 const char* ts3plugin_version() {
-	return "0.1";
+	return "0.2";
 }
 
 int ts3plugin_apiVersion() {
@@ -152,7 +152,9 @@ int ts3plugin_onTextMessageEvent(uint64 serverConnectionHandlerID, anyID targetM
 	std::string bug_2("width=\"999999999");
 	std::string bug_3("%[img%]\\\\");
 	std::string bug_4("[img][img]");
-	if (text.find(bug_1) != std::string::npos || text.find(bug_2) != std::string::npos || text.find(bug_3) != std::string::npos || text.find(bug_4) != std::string::npos) {
+	std::string bug_5("[img]\\");
+	std::string bug_6("[img]/");
+	if (text.find(bug_1) != std::string::npos || text.find(bug_2) != std::string::npos || text.find(bug_3) != std::string::npos || text.find(bug_4) != std::string::npos || text.find(bug_5) != std::string::npos || text.find(bug_6) != std::string::npos) {
 		char buff[100];
 		sprintf_s(buff, "[b][color=red][ANTI CRASH] %s (%s) wollte dich crashen![/color][/b]", fromName, fromUniqueIdentifier);
 		std::string buffAsStdStr = buff;
@@ -170,7 +172,9 @@ int ts3plugin_onClientPokeEvent(uint64 serverConnectionHandlerID, anyID fromClie
 	std::string bug_2("width=\"999999999");
 	std::string bug_3("%[img%]\\\\");
 	std::string bug_4("[img][img]");
-	if (text.find(bug_1) != std::string::npos || text.find(bug_2) != std::string::npos || text.find(bug_3) != std::string::npos || text.find(bug_4) != std::string::npos) {
+	std::string bug_5("[img]\\");
+	std::string bug_6("[img]/");
+	if (text.find(bug_1) != std::string::npos || text.find(bug_2) != std::string::npos || text.find(bug_3) != std::string::npos || text.find(bug_4) != std::string::npos || text.find(bug_5) != std::string::npos || text.find(bug_5) != std::string::npos) {
 		char buff[100];
 		sprintf_s(buff, "[b][color=red][ANTI CRASH] %s (%s) wollte dich crashen![/color][/b]", pokerName, pokerUniqueIdentity);
 		std::string buffAsStdStr = buff;
