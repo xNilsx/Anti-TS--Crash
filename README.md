@@ -4,4 +4,4 @@
 
 #### Requirements
 + API 20
-+ Teamspeak  3.0.x (WIN 32!)
++ Teamspeak  3.0.x (Compiled DLL: TS3 32-Bit Version!)
